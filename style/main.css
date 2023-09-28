@@ -161,7 +161,7 @@ main .more h2 {
 }
 
 main .more .more-content {
-    width: 60vw;
+    width: 80vw;
     height: 60vh;
 
     display: flex;
@@ -194,11 +194,383 @@ main .more .more-content .more-item img {
 main .more .more-content .more-item h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fff;
+    color: #000;
 }
 
 main .more .more-content .more-item p {
     font-size: 1rem;
     font-weight: bold;
+    color: #000;
+}
+
+main .more .more-content .more-item button {
+    width: 150px;
+    height: 50px;
+
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/* form */
+
+main .form {
+    width: 60vw;
+    height: 100vh;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    background-color: #fff;
+}
+
+
+main .form h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2d3648;
+}
+
+
+main .form .form-content {
+    width: 40vw;
+    height: 80vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    flex-direction: column;
+}
+
+main .form .form-content .form-wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: row;
+}
+
+main .form .form-content .form-wrapper .wrapper-content {
+    width: calc(50% - 10px);
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main .form .form-content .form-item {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .form .form-content .form-item h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2d3648;
+}
+
+main .form .form-content .form-item p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2d3648;
+}
+
+main .form .form-content .form-item input {
+    width: 100%;
+    height: 50px;
+
+    margin-top: 10px;
+    padding: 0 10px;
+
+    border: 1px solid #2d3648;
+    border-radius: 5px;
+
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+main .form .form-content .form-item button {
+    width: 150px;
+    height: 50px;
+
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    width: 100vw;
+    height: 200px;
+
+    background-color: #2d3648;
+}
+
+footer .footer-content {
+    width: 80vw;
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: row;
+}
+
+footer .footer-content .brand {
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+
+    flex-direction: column;
+}
+
+footer .footer-content .brand img {
+    width: 75px;
+    height: 50px;
+
+    padding: 5px;
+
+    background-color: #1c222d;
+    border-radius: 5px;
+}
+
+footer .footer-content .brand p {
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-wrap: nowrap;
     color: #fff;
 }
+
+footer .footer-content .brand .link {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-content .brand .link img {
+    width: 50px;
+    background-color: #2d3648;
+    border-radius: 0%;
+}
+
+footer .footer-content .disclamer {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-direction: row;
+}
+
+footer .footer-content .disclamer p {
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-wrap: nowrap;
+    color: #7b8fb8;
+}
+
+
+footer p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* media queries */
+
+/* @media (max-width: 768px) {
+    header {
+        width: 100vw;
+    }
+
+    header .logo {
+        width: 100px;
+        height: 50px;
+    }
+
+    header .logo p {
+        font-size: 1.2rem;
+    }
+
+    header nav {
+        width: 50vw;
+    }
+
+    header nav a {
+        font-size: 1rem;
+    }
+
+    main .hero .hero-content {
+        width: 100%;
+        height: 100%;
+
+        padding: 0 20px;
+    }
+
+    main .hero .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    main .hero .hero-content p {
+        font-size: 0.8rem;
+    }
+
+    main .hero .hero-content button {
+        width: 100px;
+        height: 40px;
+
+        font-size: 0.8rem;
+    }
+
+    main .more {
+        width: 100%;
+        height: 100vh;
+    }
+
+    main .more h2 {
+        font-size: 2rem;
+    }
+
+    main .more .more-content {
+        width: 100%;
+        height: 100%;
+
+        flex-direction: column;
+    }
+
+    main .more .more-content .more-item {
+        width: 100%;
+        height: 30%;
+    }
+
+    main .more .more-content .more-item img {
+        border-radius: 5px 5px 0 0;
+    }
+
+    main .more .more-content .more-item h3 {
+        font-size: 1rem;
+    }
+
+    main .more .more-content .more-item p {
+        font-size: 0.8rem;
+    }
+
+    main .more .more-content .more-item button {
+        width: 100px;
+        height: 40px;
+
+        font-size: 0.8rem;
+    }
+
+    main .form {
+        width: 100%;
+        height: 100vh;
+
+        margin: 0 auto;
+    }
+
+    main .form h2 {
+        font-size: 2rem;
+    }
+
+    main .form .form-content {
+        width: 100%;
+        height: 100%;
+
+        flex-direction: column;
+    }
+
+    main .form .form-content .form-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    main .form .form-content .form-wrapper .wrapper-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    main .form .form-content .form-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    main .form .form-content .form-item h2 {
+        font-size: 2rem;
+    }
+
+    main .form .form-content .form-item p {
+        font-size: 0.8rem;
+    }
+
+    main .form .form-content .form-item input {
+        width: 100%;
+        height: 40px;
+
+        margin-top: 10px;
+        padding: 0 10px;
+
+        border: 1px solid #2d3648;
+        border-radius: 5px;
+
+        font-size: 0.8rem;
+    }
+
+    main .form .form-content .form-item button {
+        width: 100px;
+        height: 40px;
+
+        margin-top: 20px;
+
+        font-size: 0.8rem;
+    }
+
+    footer {
+        width: 100%;
+        height: 100px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+} */

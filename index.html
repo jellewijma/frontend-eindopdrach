@@ -61,46 +61,54 @@
         </section>
         <section class="form">
             <h2>Form</h2>
-            <form action="">
-                <div class="">
-                    <input type="text" placeholder="Voornaam">
-                    <input type="text" placeholder="Achternaam">
+            <form action="" class="form-content">
+                <div class="form-wrapper">
+                    <input type="text" placeholder="Voornaam" class="wrapper-content">
+                    <input type="text" placeholder="Achternaam" class="wrapper-content">
                 </div>
-                <input type="email" placeholder="Email">
-                <div class="">
-                    <input type="text" placeholder="Woonplaats">
-                    <input type="date" placeholder="dd-mm-jjjj">
+                <input type="email" placeholder="Email" class="form-item">
+                <div class="form-wrapper">
+                    <input type="text" placeholder="Woonplaats" class="wrapper-content">
+                    <input type="date" placeholder="dd-mm-jjjj" class="wrapper-content">
                 </div>
-                <input type="range" name="Onderwerp" id="" placeholder="Kies onderwerp van het bericht">
-                <div class="">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Bericht"></textarea>
-                </div>
-                <div class="">
-                    <input type="radio" name="Ja" id="">
-                    <input type="radio" name="Nee" id="">
+                <select id="cars" name="onderwerp">
+                    <option selected>Kies onderwerp van het bericht</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Bericht" class="form-item"></textarea>
+                <div class="form-item">
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">Ja</label><br>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">Nee</label><br>
                 </div>
                 <input type="checkbox" name="akkoord" id="">
-                <div class="">
+                <div class="form-item">
                     <button>Submit button</button>
                 </div>
             </form>
         </section>
     </main>
     <footer>
-        <div class="">
-            <img src="./src/svg/icon-field-gallery.svg" alt="" srcset="">
-            <p>Copyright 2023 Bedrijfsnaam</p>
-            <div class="">
-                <img src="./src/svg/icons8-instagram.svg" alt="">
-                <img src="./src/svg/icons8-facebook.svg" alt="">
-                <img src="./src/svg/icons8-snapchat-squared.svg" alt="">
+        <div class="footer-content">
+            <div class="brand">
+                <img src="./src/svg/icon-field-gallery.svg" alt="" srcset="">
+                <p>Copyright 2023 Bedrijfsnaam</p>
+                <div class="link">
+                    <img src="./src/svg/icons8-instagram.svg" alt="">
+                    <img src="./src/svg/icons8-facebook.svg" alt="">
+                    <img src="./src/svg/icons8-snapchat-squared.svg" alt="">
+                </div>
             </div>
-        </div>
-        <div class="">
-            <p>Privacyverklaring</p>
-            <p>Algemene voorwaarden</p>
-            <p>Cookiebeleid</p>
-            <p>contact</p>
+            <div class="disclamer">
+                <p>Privacyverklaring</p>
+                <p>Algemene voorwaarden</p>
+                <p>Cookiebeleid</p>
+                <p>contact</p>
+            </div>
         </div>
     </footer>
 </body>
