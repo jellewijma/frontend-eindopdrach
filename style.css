@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* nav */
+
+nav {
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0px;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+nav .wrapper {
+    width: 80vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+
+    margin: 0 auto;
+}
+
+
+nav .wrapper a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/greg-banek-ocqzUDcHinc-unsplash.jpg');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: #fff;
+}
+
+main .slogan {
+    width: 80vw;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+
+    margin: 0 auto;
+}
+
+main .slogan h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+main .slogan h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
