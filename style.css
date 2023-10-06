@@ -556,6 +556,7 @@ footer .container .links .disclamer a {
     nav .wrapper #logo {
         display: block;
         font-size: 1.25rem;
+        z-index: 10;
     }
 
     nav .wrapper a {
@@ -563,8 +564,10 @@ footer .container .links .disclamer a {
     }
 
     .side-skirt {
+        height: 40vh;
+        padding: 30vh 0px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         flex-direction: column;
     }
@@ -728,7 +731,13 @@ footer .container .links .disclamer a {
     footer .container .links .disclamer a {
         font-size: 1rem;
     }
+}
 
+@media only screen and (max-width: 1920px) {
 
+    footer .container .links .disclamer a {
+        font-size: 1rem;
+        padding: 0px 20px 0px 0px;
+    }
 
 }
