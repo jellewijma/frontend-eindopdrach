@@ -13,89 +13,146 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap"
         rel="stylesheet">
+    <!-- cdn jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-
-    <main>
-        <div class="slogan">
-            <!-- <h1>
-                <span class="h1">Rev Up Your</span>
-                <span class="sloganwrapper">
-                    <span class="h1">Pasion:</span>
-                    <span class="h2">Welcome to the Porsche Enthusiast Club!</span>
-                </span>
-            </h1> -->
-            <div class="title">
-                <h1>Rev Up Your <br>Pasion</h1>
-                <span class="dots">:</span>
-                <h2>Welcome to the Porsche Enthusiast Club!</h2>
-            </div>
-        </div>
-    </main>
-    <section class="article">
-        <div class="post">
-            <h3>ARTICLE</h3>
-            <h2>Porsche 911 RSR</h2>
-            <p>
-                The Porsche 911 RSR is a high-performance sports car designed and engineered for the ultimate racing
-                experience. Born from a legacy of motorsport excellence, this iconic machine represents the pinnacle of
-                Porsche's racing heritage.
-                <br><br>
-                With its distinctive rear-engine layout and aggressive aerodynamics, the Porsche 911 RSR is a formidable
-                presence on the racetrack. It boasts a powerful flat-six engine that delivers exhilarating speed and
-                precise handling, making it a dominant force in endurance racing competitions such as the 24 Hours of Le
-                Mans and the IMSA WeatherTech SportsCar Championship.
-            </p>
-            <a href="">Read More</a>
-        </div>
-        <!-- <div class=""></div> -->
-        <img src="./img/ye-massa-OEkXWZKenyI-unsplash.jpg" alt="" srcset="">
-    </section>
-    <section class="contact">
-        <!-- <div class=""></div> -->
-        <img src="./img/yannis-zaugg-NjhfsfsbJhw-unsplash.jpg" alt="" srcset="">
-        <div class="form">
-            <h2>Join the Club</h2>
-            <form action="">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Name">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="button" value="Subscribe">
-                <!-- <button>Subscribe</button> -->
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="line"></div>
-            <div class="social">
-                <div class="">
-                    <h3>PORSCHE CLUB</h3>
-                    <a href="">Snap</a>
-                    <a href="">Facebook</a>
-                    <a href="">Instagram</a>
+    <div class="mobile-wrapper">
+        <main>
+            <section class="hero">
+                <div class="slogan">
+                    <div class="title">
+                        <h1>Rev Up Your <br>Pasion</h1>
+                        <span class="dots">: </span>
+                        <h2>Welcome to the Porsche Enthusiast Club!</h2>
+                    </div>
                 </div>
-                <div class="">
-                    <a href="">Privacyverklaring</a>
-                    <a href="">Algemene Voorwaarden</a>
-                    <a href="">Cookiebeleid</a>
-                    <a href="">Contact</a>
+            </section>
+            <section class="article">
+                <div class="post">
+                    <h3>ARTICLE</h3>
+                    <h2>Porsche 911 RSR</h2>
+                    <p>
+                        The Porsche 911 RSR is a high-performance sports car designed and engineered for the ultimate
+                        racing
+                        experience. Born from a legacy of motorsport excellence, this iconic machine represents the
+                        pinnacle
+                        of
+                        Porsche's racing heritage.
+                    </p>
+                    <p>
+                        With its distinctive rear-engine layout and aggressive aerodynamics, the Porsche 911 RSR is a
+                        formidable
+                        presence on the racetrack. It boasts a powerful flat-six engine that delivers exhilarating speed
+                        and
+                        precise handling, making it a dominant force in endurance racing competitions such as the 24
+                        Hours
+                        of Le
+                        Mans and the IMSA WeatherTech SportsCar Championship.
+                    </p>
+                    <a href="./blog.html#911rsr">Read More</a>
+                </div>
+                <!-- <div class=""></div> -->
+                <img src="./img/ye-massa-OEkXWZKenyI-unsplash.jpg" alt="A picture of a Porsche 911 RSR on a racetrack"
+                    srcset="">
+            </section>
+            <section class="contact">
+                <!-- <div class=""></div> -->
+                <img src="./img/yannis-zaugg-NjhfsfsbJhw-unsplash.jpg"
+                    alt="A picture of an oldtimer porsche 911 daka 1976" srcset="">
+                <div class="form">
+                    <h2>Join The Club</h2>
+                    <form action="">
+                        <div class="flex">
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <input type="submit" value="Subscribe">
+                    </form>
+                    <p class="testimonial">
+                        "The Porsche Club Blog has been a true delight for a Porsche enthusiast like me. The wealth of
+                        information and engaging articles on everything from classic models to the latest releases keeps
+                        me
+                        coming back for more." - "The Porsche Club Blog has been a true delight for a Porsche enthusiast
+                        like
+                        me. The wealth of information and engaging articles on everything from classic models to the
+                        latest
+                        releases keeps me coming back for more." - A Porsche Enthusiast
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="line"></div>
+                <div class="links">
+                    <div class="social">
+                        <h3>PORSCHE CLUB</h3>
+                        <a href="https://snapchat.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="44" height="44" viewBox="-10 -8 44 44" fill="none">
+                                <path
+                                    d="M23.4269 19.055C23.935 18.5411 24.0101 17.9826 23.8435 17.4522C23.6252 16.7541 22.8614 16.5124 22.4202 16.259C20.0008 14.8744 19.6136 13.5509 19.4986 13.355C19.4528 13.2763 19.339 13.0135 19.596 12.8035C19.8342 12.6099 21.1025 11.9927 21.6376 11.0634C21.9145 10.5812 21.9872 9.84551 21.7373 9.33277C21.3372 8.51143 20.6743 8.03271 19.7567 8.03271C19.4212 8.03271 19.0809 8.11836 19.0316 8.1301C19.014 7.60092 19.0117 6.98727 18.9788 6.43345C18.8357 4.12081 16.8961 0.267578 11.9998 0.267578C7.10349 0.267578 5.16397 4.12081 5.02082 6.43228C4.98679 6.98492 4.98562 7.59858 4.96685 8.12892C4.91756 8.11719 4.57847 8.03154 4.24172 8.03154C3.32418 8.03154 2.66124 8.51025 2.26114 9.33159C2.01122 9.84551 2.08396 10.58 2.36087 11.0623C2.89474 11.9915 4.16428 12.6087 4.40247 12.8023C4.65943 13.0123 4.54562 13.2752 4.49986 13.3538C4.38487 13.5497 3.99767 14.8732 1.57825 16.2578C1.13591 16.5101 0.372066 16.7529 0.154999 17.4511C-0.0104416 17.9826 0.0646513 18.5399 0.571532 19.0538C1.38113 19.874 2.795 20.0782 2.97335 20.2471C3.15169 20.4161 3.23031 21.0567 3.80055 21.424C4.37079 21.7901 5.07362 21.7807 5.43383 21.8088C6.88525 21.9191 7.26423 21.986 8.16887 22.5633C8.46338 22.7498 9.89837 23.7343 11.9998 23.7343C14.1013 23.7343 15.5362 22.7498 15.8284 22.5633C16.733 21.986 17.1132 21.9191 18.5634 21.8088C18.9237 21.7818 19.6265 21.7912 20.1967 21.424C20.767 21.0579 20.8456 20.4161 21.0239 20.2471C21.2035 20.0782 22.6161 19.874 23.4269 19.055Z"
+                                    fill="#2D2D40" />
+                            </svg></a>
+
+                        <a href="https://facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                <path
+                                    d="M28.1598 13.2008H26.3998C24.5166 13.2008 23.7598 13.6408 23.7598 14.9608V17.6008H28.1598L27.2798 22.0008H23.7598V35.2008H19.3598V22.0008H15.8398V17.6008H19.3598V14.9608C19.3598 11.4408 21.1198 8.80078 24.6398 8.80078C27.1918 8.80078 28.1598 9.68078 28.1598 9.68078V13.2008Z"
+                                    fill="#2D2D40" />
+                            </svg></a>
+                        <a href="https://www.instagram.com/porscheclub/" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
+                                fill="none">
+                                <path
+                                    d="M15.7695 6.875C10.8872 6.875 6.875 10.8818 6.875 15.7695V28.2305C6.875 33.1128 10.8818 37.125 15.7695 37.125H28.2305C33.1128 37.125 37.125 33.1182 37.125 28.2305V15.7695C37.125 10.8872 33.1182 6.875 28.2305 6.875H15.7695ZM15.7695 9.625H28.2305C31.6304 9.625 34.375 12.3696 34.375 15.7695V28.2305C34.375 31.6304 31.6304 34.375 28.2305 34.375H15.7695C12.3696 34.375 9.625 31.6304 9.625 28.2305V15.7695C9.625 12.3696 12.3696 9.625 15.7695 9.625ZM30.1211 12.6328C29.4282 12.6328 28.875 13.186 28.875 13.8789C28.875 14.5718 29.4282 15.125 30.1211 15.125C30.814 15.125 31.3672 14.5718 31.3672 13.8789C31.3672 13.186 30.814 12.6328 30.1211 12.6328ZM22 13.75C17.4614 13.75 13.75 17.4614 13.75 22C13.75 26.5386 17.4614 30.25 22 30.25C26.5386 30.25 30.25 26.5386 30.25 22C30.25 17.4614 26.5386 13.75 22 13.75ZM22 16.5C25.0562 16.5 27.5 18.9438 27.5 22C27.5 25.0562 25.0562 27.5 22 27.5C18.9438 27.5 16.5 25.0562 16.5 22C16.5 18.9438 18.9438 16.5 22 16.5Z"
+                                    fill="#2D2D40" />
+                            </svg></a>
+                    </div>
+                    <div class="disclamer">
+                        <a href="./pages/privacy.html">Privacyverklaring</a>
+                        <a href="./pages/voorwaarden.html">Algemene Voorwaarden</a>
+                        <a href="./pages/cookie.html">Cookiebeleid</a>
+                        <a href="./pages/contact.html">Contact</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <nav>
-        <div class="wrapper">
-            <a href="" class="logo">PORSCHE CLUB</a>
-            <a href="">BLOG</a>
-            <a href="">ABOUT</a>
-            <a href="">HISTORY</a>
-            <a href="">CONTACT</a>
-        </div>
-    </nav>
+        </footer>
+        <nav>
+            <div class="wrapper">
+                <a href="./index.html" id="logo">PORSCHE CLUB</a>
+                <a href="./pages/blog.html">BLOG</a>
+                <a href="./pages/about.html">ABOUT</a>
+                <a href="./pages/history.html">HISTORY</a>
+                <a href="./pages/contact.html">CONTACT</a>
+                <div class="mobile-nav">
+                    <div class="side-skirt">
+                        <a href="./pages/blog.html">BLOG</a>
+                        <a href="./pages/about.html">ABOUT</a>
+                        <a href="./pages/history.html">HISTORY</a>
+                        <a href="./pages/contact.html">CONTACT</a>
+                    </div>
+                    <div id="nav-icon3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 
+    <script>
+        $(document).ready(function () {
+            $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+                $(this).toggleClass('open');
+                $('.side-skirt').toggleClass('open');
+            });
+        });
+    </script>
 </body>
 
 </html>
