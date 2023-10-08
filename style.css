@@ -237,7 +237,7 @@ nav .mobile-nav {
 .hero {
     width: 100vw;
     height: 100vh;
-    background-image: url('./img/greg-banek-ocqzUDcHinc-unsplash.jpg');
+    background-image: image-set("./img/greg-banek-ocqzUDcHinc-unsplash.jpg" 1x, "./img/greg-banek-ocqzUDcHinc-unsplash.jpg" 2x);
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -273,7 +273,7 @@ nav .mobile-nav {
     }
 }
 
-h1,
+/* h1,
 h2 {
     display: inline;
 }
@@ -288,11 +288,34 @@ h2 {
     font-style: italic;
     font-size: 2rem;
     font-weight: 400;
+} */
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+h1 {
+    display: inline-block;
+    width: 600px;
+    font-family: 'Codec cold heavy';
+    font-size: 6rem;
+}
+
+.title h2 {
+    font-family: 'nunito sans', sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+    padding-left: 10px;
 }
 
 .dots {
     font-family: 'Codec cold heavy';
     font-size: 6rem;
+    margin-left: -200px;
 }
 
 .article {
@@ -360,7 +383,7 @@ h2 {
 }
 
 
-.article img {
+.article picture img {
     width: 50vw;
     height: 100vh;
 
@@ -376,7 +399,7 @@ h2 {
     align-items: center;
 }
 
-.contact img {
+.contact picture img {
     width: 50vw;
     height: 100vh;
 
@@ -577,13 +600,44 @@ footer .container .links .disclamer a {
         color: #fff;
     }
 
+    .title {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    h1 {
+        display: inline-block;
+        width: 300px;
+        font-family: 'Codec cold heavy';
+        font-size: 3rem;
+    }
+
+    .title h2 {
+        font-family: 'nunito sans', sans-serif;
+        font-style: italic;
+        font-size: 1rem;
+        font-weight: 400;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        margin-bottom: -50px;
+        margin-left: -220px;
+        white-space: nowrap;
+    }
+
+    .dots {
+        font-family: 'Codec cold heavy';
+        font-size: 3rem;
+        margin-left: -100px;
+    }
+
     h1,
     .dots {
         font-size: 3rem;
     }
 
     h2 {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .article {
@@ -593,7 +647,7 @@ footer .container .links .disclamer a {
         height: 100vh;
     }
 
-    .article img {
+    .article picture img {
         width: 100vw;
         height: 25vh;
     }
@@ -610,7 +664,7 @@ footer .container .links .disclamer a {
     }
 
     .post h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .post p {
@@ -629,7 +683,7 @@ footer .container .links .disclamer a {
         height: 100vh;
     }
 
-    .contact img {
+    .contact picture img {
         width: 100vw;
         height: 25vh;
     }

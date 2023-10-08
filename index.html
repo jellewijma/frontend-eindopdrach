@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porsche Club</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="style.css">
 
     <!-- fonts -->
@@ -14,7 +15,10 @@
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap"
         rel="stylesheet">
     <!-- cdn jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -22,8 +26,13 @@
         <main>
             <section class="hero">
                 <div class="slogan">
-                    <div class="title">
+                    <!-- <div class="title">
                         <h1>Rev Up Your <br>Passion</h1>
+                        <span class="dots">: </span>
+                        <h2>Welcome to the Porsche Enthusiast Club!</h2>
+                    </div> -->
+                    <div class="title">
+                        <h1>Rev Up Your Passion</h1>
                         <span class="dots">: </span>
                         <h2>Welcome to the Porsche Enthusiast Club!</h2>
                     </div>
@@ -55,17 +64,21 @@
                 </div>
                 <!-- <div class=""></div> -->
                 <picture>
-                    <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
-                    <source media="(min-width:465px)" srcset="img_white_flower.jpg">
-                    <img src="./img/ye-massa-OEkXWZKenyI-unsplash.jpg" alt="Flowers" style="width:auto;">
+                    <source media="(max-width:1920px)" srcset="./img/porsche-911-rsr-1080-min.jpg">
+                    <source media="(max-width:720px)" srcset="./img/porsche-911-rsr-720-min.jpg">
+                    <img src="./img/porsche-911-rsr-4k-min.jpg" alt="A picture of a Porsche 911 RSR on a racetrack">
                 </picture>
                 <!-- <img src="./img/ye-massa-OEkXWZKenyI-unsplash.jpg" alt="A picture of a Porsche 911 RSR on a racetrack"
                     srcset=""> -->
             </section>
             <section class="contact">
                 <!-- <div class=""></div> -->
-                <img src="./img/yannis-zaugg-NjhfsfsbJhw-unsplash.jpg"
-                    alt="A picture of an oldtimer porsche 911 daka 1976" srcset="">
+                <!-- <img src="./img/yannis-zaugg-NjhfsfsbJhw-unsplash.jpg" alt="" srcset=""> -->
+                <picture>
+                    <source media="(max-width:1920px)" srcset="./img/porsche-daka-1080.jpg">
+                    <source media="(max-width:720px)" srcset="./img/porsche-daka-720.jpg">
+                    <img src="./img/porsche-daka-4k.jpg" alt="A picture of an oldtimer porsche 911 daka 1976">
+                </picture>
                 <div class="form">
                     <h2>Join The Club</h2>
                     <form action="">
