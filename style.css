@@ -774,12 +774,12 @@ footer .container .links .disclamer a {
     }
 
     footer .container .links .disclamer {
-        width: 100%;
+        width: 106%;
 
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: start;
     }
 
     footer .container .links .disclamer a {
